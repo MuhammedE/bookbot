@@ -29,7 +29,7 @@ def print_report():
             dict_item["char"] = k
             dict_item["count"] = counts_dict[k]
             list_counts_dict.append(dict_item)
-    list_counts_dict.sort(reverse=True,key=sort_on)
+    list_counts_dict.sort(reverse=True,key=sort_on_count)
 
     print("--- Begin report of books/frankenstein.txt ---")
     print(f"{word_count} words found in the document")
@@ -39,7 +39,7 @@ def print_report():
     
 
 
-def sort_on(dict):
+def sort_on_count(dict):
     return dict["count"]
 
 
