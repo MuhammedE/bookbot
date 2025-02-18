@@ -37,23 +37,10 @@ def print_report():
         print(f"The '{dict_item["char"]}' character was found {dict_item["count"]} times")
     print("--- End report ---")
     
-
-
 def sort_on_count(dict):
     return dict["count"]
-
-
-
-
-
-
 
 def main():
     print_report()
     
-    
-
-
-
-
 main()
